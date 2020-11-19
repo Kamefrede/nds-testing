@@ -6,13 +6,13 @@ Keep in mind that you need to have the appropriate Devkitpro packages for NDS in
 
 First, start by compiling the code with
 ```rust
-cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-eabi.json` for a release build
+cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-eabi.json
 ```
-for the release build or 
+for a release build or 
 ```rust 
 cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-eabi.json
 ```
-for the debug build.
+for a debug build.
 
 Next(At some point I'll write a script that automates this)
 
