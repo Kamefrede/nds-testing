@@ -10,7 +10,7 @@ cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-e
 ```
 for a release build or 
 ```rust 
-cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-eabi.json
+cargo +nightly build -Z build-std=core,alloc --target thumbv5te-none-eabi.json
 ```
 for a debug build.
 
