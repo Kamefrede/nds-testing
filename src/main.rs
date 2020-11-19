@@ -4,7 +4,7 @@
 #![feature(start)]
 
 use nds_sys;
-use nds_sys::{consoleDemoInit, iprintf, consoleDebugInit, PrintConsole, consoleClear, printf};
+use nds_sys::{consoleDemoInit, printf};
 use core::panic::PanicInfo;
 
 macro_rules! c_str {

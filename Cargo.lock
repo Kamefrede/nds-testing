@@ -9,12 +9,13 @@ checksum = "4d58d1b70b004888f764dfbf6a26a3b0342a1632d33968e4a179d8011c760614"
 [[package]]
 name = "nds-sys"
 version = "0.1.0"
+source = "git+https://github.com/Kamefrede/nds-rs#8805699d695773e336bfe1efcb5bbd29196ecc0e"
 dependencies = [
  "libc",
 ]
 
 [[package]]
-name = "nds-testing-rs"
+name = "nds-testing"
 version = "0.1.0"
 dependencies = [
  "nds-sys",
