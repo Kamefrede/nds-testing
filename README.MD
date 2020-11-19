@@ -24,3 +24,8 @@ ndstool -c nds_testing_rs.nds -9 nds-testing -b /opt/devkitpro/libnds/icon.bmp "
 It will then generate a .nds file on the folder you ran the command on. 
 
 ... And you're done!
+
+# Credits
+https://github.com/rrohrer/rs-nds
+
+https://github.com/rrohrer/crawler
