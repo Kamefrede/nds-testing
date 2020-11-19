@@ -7,9 +7,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4d58d1b70b004888f764dfbf6a26a3b0342a1632d33968e4a179d8011c760614"
 
 [[package]]
+name = "nds-rs"
+version = "0.1.0"
+source = "git+https://github.com/Kamefrede/nds-rs#74fa09d00123838bc0d75e408cb61c085d229728"
+dependencies = [
+ "nds-sys",
+]
+
+[[package]]
 name = "nds-sys"
 version = "0.1.0"
-source = "git+https://github.com/Kamefrede/nds-rs#56121f42076ecd3c7fbb9f0186e1e319d69da45c"
+source = "git+https://github.com/Kamefrede/nds-rs#74fa09d00123838bc0d75e408cb61c085d229728"
 dependencies = [
  "libc",
 ]
@@ -18,5 +26,6 @@ dependencies = [
 name = "nds-testing"
 version = "0.1.0"
 dependencies = [
+ "nds-rs",
  "nds-sys",
 ]

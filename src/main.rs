@@ -1,30 +1,21 @@
 #![no_std]
 #![no_main]
-#![feature(lang_items)]
 #![feature(start)]
 
 use nds_sys;
-use nds_sys::{consoleDemoInit, printf};
-use core::panic::PanicInfo;
-
-macro_rules! c_str {
-    ($s:expr) => {{
-        concat!($s, "\0").as_ptr()
-    }};
-}
+use nds_sys::{consoleDemoInit, print, println};
+extern crate alloc;
+extern crate nds;
 
 #[no_mangle]
 #[start]
-fn main(argc: isize, argv: * const* const u8) -> isize {
+fn main(argc: isize, argv: *const *const u8) -> isize {
     unsafe {
-        consoleDemoInit();
-        printf(c_str!("Hello, from Rust!"));
-        loop {
-        }
-    }
-}
+        let tiny_vec = alloc::vec![1, 2, 3];
 
-#[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
-    loop {}
+        consoleDemoInit();
+        println!("Hello, from Rust!");
+        println!("{:?}", tiny_vec);
+        loop {}
+    }
 }

@@ -9,6 +9,9 @@ edition = "2018"
 [dependencies.nds-sys]
 git = "https://github.com/Kamefrede/nds-rs"
 
+[dependencies.nds-rs]
+git = "https://github.com/Kamefrede/nds-rs"
+
 [profile.dev]
 panic = "abort" # disable stack unwinding on panic
 

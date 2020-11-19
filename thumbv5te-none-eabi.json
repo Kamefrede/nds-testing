@@ -43,6 +43,7 @@
     },
     "post-link-args": {
         "gcc": [
+            "-lgcc",
             "-specs=ds_arm9.specs",
             "-g",
             "-mthumb",
