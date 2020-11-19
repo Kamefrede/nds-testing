@@ -14,9 +14,8 @@ cargo +nightly build --release -Z build-std=core,alloc --target thumbv5te-none-e
 ```
 for a debug build.
 
-Next(At some point I'll write a script that automates this)
 
-Go to the `thumbv5te-none-eabi/release` or `thumbv5te-none-eabi/debug` (depending on what type of build you did on the previous step) subdirectory inside the `target` directory and run the following command on your terminal:
+Next(At some point I'll write a script that automates this), go to the `thumbv5te-none-eabi/release` or `thumbv5te-none-eabi/debug` (depending on what type of build you did on the previous step) subdirectory inside the `target` directory and run the following command on your terminal:
 
 ```shell script
 ndstool -c nds_testing_rs.nds -9 nds-testing -b /opt/devkitpro/libnds/icon.bmp "hello_world_rust;built with devkitARM & rust;http://devkitpro.org"
